@@ -1,9 +1,9 @@
 const { nanoid } = require('nanoid');
 const { Pool } = require('pg');
-const InvariantError = require('../../exceptions/InvariantError');
-const NotFoundError = require('../../exceptions/NotFoundError');
+const InvariantError = require('../exceptions/InvariantError');
+const NotFoundError = require('../exceptions/NotFoundError');
 
-class AlbumsService_subm_v1 {
+class AlbumsService {
   constructor() {
     this._pool = new Pool();
   }
@@ -76,4 +76,4 @@ class AlbumsService_subm_v1 {
     }
   }
 }
-module.exports = AlbumsService_subm_v1;
+module.exports = AlbumsService;
